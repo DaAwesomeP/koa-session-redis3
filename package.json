@@ -1,0 +1,43 @@
+{
+  "name": "koa-session-redis3",
+  "description": "Koa Redis Session Middleware",
+  "repository": "DaAwesomeP/koa-session-redis3",
+  "version": "1.0.0",
+  "homepage": "https://github.com/DaAwesomeP/koa-session-redis3/",
+  "bugs": "https://github.com/DaAwesomeP/koa-session-redis3/issues",
+  "license": "Apache-2.0",
+  "version": "1.0.0",
+  "author": {
+    "name": "DaAwesomeP",
+    "url": "https://daawesomep.guthub.io/"
+  }
+  "keywords": [
+    "koa",
+    "middleware",
+    "session",
+    "redis",
+    "hiredis",
+    "ttl",
+    "key",
+    "user"
+  ],
+  "files": [
+    "index.js"
+  ],
+  "devDependencies": {
+    "koa": "*",
+    "mocha": "*",
+    "should": "*",
+    "supertest": "*"
+  },
+  "dependencies": {
+    "debug": "*",
+    "hiredis": "0.4.*",
+    "puid": "1.0.*",
+    "redis": "1.0.*",
+    "thunkify": "2.1.*"
+  },
+  "scripts": {
+    "test": "make test"
+  }
+}
