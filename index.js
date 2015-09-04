@@ -20,7 +20,7 @@
  */
 
 var debug = require('debug')('koa-session-redis3');
-vvar Puid = require('puid');
+var Puid = require('puid');
 var puid = new Puid();
 var thunkify = require('thunkify');
 var redis = require('redis');
