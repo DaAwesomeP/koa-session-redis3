@@ -1,5 +1,7 @@
 koa-session-redis3
 ==================
+
+[![Join the chat at https://gitter.im/DaAwesomeP/koa-session-redis3](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/DaAwesomeP/koa-session-redis3?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Travis](https://img.shields.io/travis/DaAwesomeP/koa-session-redis3.svg?style=flat-square)](https://travis-ci.org/DaAwesomeP/koa-session-redis3) [![npm](https://img.shields.io/npm/koa-session-redis3.svg?style=flat-square)](https://www.npmjs.com/package/koa-session-redis3) [![npm](https://img.shields.io/npm/dm/koa-session-redis3.svg?style=flat-square)](https://www.npmjs.com/package/koa-session-redis3) [![David](https://img.shields.io/david/DaAwesomeP/koa-session-redis3.svg?style=flat-square)](https://david-dm.org/DaAwesomeP/koa-session-redis3) [![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](https://github.com/DaAwesomeP/koa-session-redis3/blob/master/LICENSE) [![Gitter chat](https://badges.gitter.im/DaAwesomeP/koa-session-redis3.png?style=flat-square)](https://gitter.im/DaAwesomeP/koa-session-redis3)
 ---
 Redis store-based session middleware for Koa. This version adds the `keySchema` option to use a prefix on Redis keys. It also adds `hiredis` and `puid`.
