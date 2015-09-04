@@ -11,7 +11,7 @@ describe('Koa Session', function(){
         var app = koa();
         app.keys = ['a', 'b'];
         app.use(session());
-        app.use(function *(){
+        app.use(function*(){
           this.session.message = 'hi';
           this.body = this.session;
         });
@@ -26,7 +26,7 @@ describe('Koa Session', function(){
       it('should throw', function(done){
         var app = koa();
         app.use(session());
-        app.use(function *(){
+        app.use(function*(){
           this.session.message = 'hi';
           this.body = this.session;
         });
