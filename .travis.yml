@@ -2,6 +2,8 @@ language: node_js
 node_js:
   - "0.12"
   - "0.11"
+  - "iojs"
+  - "iojs-v1.0.4"
 services:
   - redis-server
-script: node --harmony-generators ./node_modules/.bin/mocha
+script: node ./node_modules/.bin/mocha --harmony-generators
