@@ -214,7 +214,7 @@ describe('Koa Session', function(){
     // })
   // })
 
-  // describe('when session = ', function(){
+  describe('when session = ', function(){
     // describe('null', function(){
       // it('should expire the session', function(done){
         // var app = App();
