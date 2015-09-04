@@ -2,7 +2,7 @@
   "name": "koa-session-redis3",
   "description": "Koa Redis Session Middleware",
   "repository": "DaAwesomeP/koa-session-redis3",
-  "version": "1.3.1",
+  "version": "1.3.2",
   "homepage": "https://github.com/DaAwesomeP/koa-session-redis3/",
   "bugs": "https://github.com/DaAwesomeP/koa-session-redis3/issues",
   "license": "Apache-2.0",
