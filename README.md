@@ -48,7 +48,7 @@ This module provides "guest" sessions, meaning any visitor will have a session, 
 
 ## Cookies
 
-The cookies opts is set by `cookie` object, simply passed to [cookie](https://github.com/defunctzombie/node-cookie) module. And the rest is same with `koa-session`;
+The cookies opts is set by `cookie` object, simply passed to [cookies](https://github.com/pillarjs/cookies/blob/master/lib/cookies.js) module. And the rest is same with `koa-session`;
 
 ### Options
 
