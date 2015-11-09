@@ -4,6 +4,9 @@ node_js:
   - "iojs-v2"
   - "4.2"
   - "5.0"
+compiler:
+  - clang
+  - gcc
 services:
   - redis-server
 script: node ./node_modules/.bin/mocha --harmony
