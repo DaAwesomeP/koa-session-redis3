@@ -31,10 +31,12 @@
   },
   "dependencies": {
     "debug": "*",
-    "hiredis": "0.4.*",
     "puid": "1.0.*",
-    "redis": "2.1.*",
+    "redis": "2.3.*",
     "thunkify": "2.1.*"
+  },
+  "optionalDependencies": {
+    "hiredis": "0.4.*"
   },
   "scripts": {
     "test": "make test"
