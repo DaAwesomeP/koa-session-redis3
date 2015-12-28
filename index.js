@@ -46,6 +46,7 @@ module.exports = function (opts) {
   //redis opts
   redisOption = opts.store || {};
   debug('redis config all: %j', redisOption);
+  debug('redis config url: %s', redisOption.url);
   debug('redis config port: %s', redisOption.port || (redisOption.port = 6379));
   debug('redis config host: %s', redisOption.host || (redisOption.host = '127.0.0.1'));
   debug('redis config options: %j', redisOption.options || (redisOption.options = {}));
@@ -65,11 +66,16 @@ module.exports = function (opts) {
   debug('cookie config maxage: %s', (typeof cookieOption.maxage !== 'undefined') ? cookieOption.maxage : (cookieOption.maxage = redisOption.ttl * 1000 || null));
 
   //redis client for session
-  client = redis.createClient(
-    redisOption.port,
-    redisOption.host,
+  if (redisOption.url) {
+    redisOption.url,
     redisOption.options
-  );
+  } else {
+    client = redis.createClient(
+      redisOption.port,
+      redisOption.host,
+      redisOption.options
+    );
+  }
 
   client.select(redisOption.db, function () {
     debug('redis changed to db %d', redisOption.db);
